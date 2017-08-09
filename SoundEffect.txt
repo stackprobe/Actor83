@@ -1,0 +1,7 @@
+C:\Dat\muon.wav
+Resource\SensesCircuit\get.mp3
+Resource\SensesCircuit\bell.mp3
+Resource\SensesCircuit\get_2.mp3
+Resource\SensesCircuit\menu.mp3
+Resource\SensesCircuit\shot.mp3
+Resource\SensesCircuit\koke.mp3
