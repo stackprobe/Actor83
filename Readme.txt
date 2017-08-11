@@ -1,22 +1,22 @@
 Actor83
 =======
 
-Windows�p�t���[�Q�[�����ǂ� Actor83 �̊J�����ł��B
+Windows用フリーゲームもどき Actor83 の開発環境です。
 
 
-��������
+動くもの
 --------
 
-�ȉ��̏ꏊ����_�E�����[�h�ł��܂��B
+以下の場所からダウンロードできます。
 
 Vector
 http://www.vector.co.jp/soft/winnt/game/se502997.html
 
-�����̃T�C�g
+うちのサイト
 http://stackprobe.dip.jp:58946/Actor83/index.html
 
 
-�J����
+開発環境
 --------
 
 Windows 7 Home Premium
