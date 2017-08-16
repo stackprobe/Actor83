@@ -7,13 +7,7 @@ Windows用フリーゲームもどき Actor83 の開発環境です。
 ビルド済み配布物
 ----------------
 
-以下の場所からダウンロードできます。
-
-Vector
-http://www.vector.co.jp/soft/winnt/game/se502997.html
-
-うちのサイト
-http://stackprobe.dip.jp:58946/Actor83/index.html
+http://stackprobe.dip.jp/Actor83
 
 
 開発環境
