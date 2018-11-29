@@ -1,147 +1,147 @@
 ===============================================================================
 
-�@Actor83
+　Actor83
 
 ===============================================================================
 
 
-���\�t�g�̊T�v
+■ソフトの概要
 
-�@�L��ȐX�ɎU�݂���P�O�W�R�̖ؔ��ɓ��������E�ь�E���Ⴊ�����E�����������Q�[���ł��B
-�@�Q�[�����炵���Q�[�����͂Ȃ��̂ŁA�Q�[�����ǂ��ƌ����������ǂ���������܂���B
-�@�R���v���Ă��N���A�^�C�����X�V����邾���ŁA�����y�������Ƃ͋N����܂���B
-�@�G���f�B���O���X�g�[���[������܂���B
+　広大な森に散在する１０８３個の木箱に入った金・林檎・じゃがいも・草を回収するゲームです。
+　ゲーム性らしいゲーム性はないので、ゲームもどきと言った方が良いかもしれません。
+　コンプしてもクリアタイムが更新されるだけで、何も楽しいことは起こりません。
+　エンディングもストーリーもありません。
 
-�@�t�B�[���h��ɃI�u�W�F�N�g��u�������������ł���悤�ɂ��܂����B
-�@�}�b�v�f�[�^�̓T�[�o�[�ŋ��L���Ă���̂ŁA�P���[�U�[�̃}�b�v�ύX���S���[�U�[�ɔ��f����܂��B
-
-
-������
-
-�@���̃\�t�g�́A�t���[�摜�f�ށE�t���[���y�i���ʉ��j�f�ނ��g�p���Ă܂��B
-�@���̃\�t�g���Ŏg�p����Ă���摜�E���y�i���ʉ��j���A���̃Q�[����V�ԈȊO�̗p�r�ɂ͎g�p���Ȃ��ŉ������B
-
-�@���̃\�t�g�̓v���C���A�C���^�[�l�b�g�i�}�b�v�f�[�^�E�T�[�o�[�j�ɐڑ����f�[�^�̂��Ƃ���s���܂��B
-�@�T�[�o�[�Ƃ̐ڑ����s���肾�ƃQ�[���̏I���Ɏ��Ԃ��|���邱�Ƃ�����܂��B�i�����Ă��R�O�b���炢�j
-
-�@�T�[�o�[�̍X�V�ɂ���ČÂ��N���C�A���g�������Ȃ��Ȃ�\��������܂��B
-�@���������������ȂƎv������ŐV�łɍX�V����Ɖ������邩������܂���B
+　フィールド上にオブジェクトを置いたり消したりできるようにしました。
+　マップデータはサーバーで共有しているので、１ユーザーのマップ変更が全ユーザーに反映されます。
 
 
-�������
+■注意
 
-�@Windows 10
-�@�m�F���Ă��܂��� Windows 7/8/8.1 �ł�������������܂���B
+　このソフトは、フリー画像素材・フリー音楽（効果音）素材を使用してます。
+　このソフト内で使用されている画像・音楽（効果音）を、このゲームを遊ぶ以外の用途には使用しないで下さい。
 
-�@2D�Q�[�������K�ɓ��삷�邭�炢�̃O���t�B�b�N�J�[�h�E�T�E���h�J�[�h�E�v���Z�b�T���K�v�ł��B
-�@������������ 300 MB ���x�g�p���܂��B
+　このソフトはプレイ中、インターネット（マップデータ・サーバー）に接続しデータのやりとりを行います。
+　サーバーとの接続が不安定だとゲームの終了に時間が掛かることがあります。（長くても３０秒くらい）
 
-�@DirectX 9.0 �ȍ~���K�v�ł��B
-
-
-���C���X�g�[�����@
-
-�@�A�[�J�C�u�̒��g�����[�J���f�B�X�N��̔C�ӂ̏ꏊ�ɃR�s�[���ĉ������B
+　サーバーの更新によって古いクライアントが動かなくなる可能性があります。
+　動きがおかしいなと思ったら最新版に更新すると解決するかもしれません。
 
 
-���A���C���X�g�[�����@
+■動作環境
 
-�@���W�X�g���Ȃǂ͈�؎g���Ă��܂���B
-�@�t�@�C�����폜���邾���ŃA���C���X�g�[���ł��܂��B
+　Windows 10
+　確認していませんが Windows 7/8/8.1 でも動くかもしれません。
 
+　2Dゲームが快適に動作するくらいのグラフィックカード・サウンドカード・プロセッサが必要です。
+　物理メモリを 300 MB 程度使用します。
 
-���N�����@
-
-�@Actor83.exe �����s���ĉ������B
-
-
-���V�ѕ�
-
-�@��������@
-
-�@�@�J�[�\���L�[ ... �v���C���[�E�J�[�\���̈ړ�
-�@�@�y           ... ����^�A�N�V����
-�@�@�w           ... �L�����Z���^�ᑬ�ړ�
-�@�@���V�t�g     ... �����ړ�
-�@�@�X�y�[�X     ... �|�[�Y
-
-�@�@�v���C���ǂ̃^�C�~���O�ł��G�X�P�[�v�L�[�������ƃQ�[�����I�����܂��B
-�@�@�Q�[���p�b�h���g���܂��B
+　DirectX 9.0 以降が必要です。
 
 
-�@���A�N�V����
+■インストール方法
 
-�@�@�t�B�[���h�}�b�v��ŃA�N�V�����L�[�������ƁA
-�@�@�ڂ̑O�ɃI�u�W�F�N�g��u������A�������肷�邱�Ƃ��ł��܂��B
-
-�@�@�|�[�Y��ʂ́u�A�N�V�����v����A�N�V�����L�[�̓����ύX�ł��܂��B
-
-�@�@���i�݂�������������ȂǂŐi�߂Ȃ��ꍇ�́u���n�v�Ȃǂ��g���ăI�u�W�F�N�g�������Ă��������B
-
-�@�@���X�̖؂ȂǏ����Ȃ��I�u�W�F�N�g������܂��B
-
-�@�@���X�^�[�g�n�_�̃}�b�v�͒���I�Ƀ��Z�b�g���邩������܂���B
+　アーカイブの中身をローカルディスク上の任意の場所にコピーして下さい。
 
 
-�@���}�b�v�f�[�^�̓���
+■アンインストール方法
 
-�@�@���������P�O�`�P�T�b�Ԋu�ŃT�[�o�[��̃}�b�v�f�[�^�Ɠ��������܂��B
-
-
-���f�ޒ�
-
-�@���摜
-
-�@�@���܂���A�t�^�[
-�@�@http://www5d.biglobe.ne.jp/~gakai/
-
-�@�@�P��̉� �q�o�f�c�N�[���f�ގx��
-�@�@http://usui.moo.jp/rpg_tukuru.html
-
-�@�@First Seed Material
-�@�@http://www.tekepon.net/fsm
-
-�@�@�҂ۂ�
-�@�@http://piposozai.blog76.fc2.com/
-
-�@���a�f�l
-
-�@�@�t���[���y�f�� H/MIX GALLERY
-�@�@http://www.hmix.net/
-
-�@���r�d
-
-�@�@�t���[���y�f�� Senses Circuit
-�@�@http://www.senses-circuit.com/
+　レジストリなどは一切使っていません。
+　ファイルを削除するだけでアンインストールできます。
 
 
-�����C�Z���X�\�L�E�ӎ�
+■起動方法
 
-�@��DxLib
-
-�@�@DX Library Copyright (C) 2001-2008 Takumi Yamada.
-�@�@libpng�@Copyright (c) 1998-2004 Glenn Randers-Pehrson.
-�@�@zlib�@Copyright (C) 1995-2004 Jean-loup Gailly and Mark Adler.
-
-�@��MT19937
-
-�@�@A C-program for MT19937, with initialization improved 2002/1/26.
-�@�@Coded by Takuji Nishimura and Makoto Matsumoto.
-
-�@��SHA-512
-
-�@�@This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)
-�@�@This product includes software written by Tim Hudson (tjh@cryptsoft.com)
+　Actor83.exe を実行して下さい。
 
 
-����舵�����
+■遊び方
 
-�@�t���[�\�t�g
+　●操作方法
+
+　　カーソルキー ... プレイヤー・カーソルの移動
+　　Ｚ           ... 決定／アクション
+　　Ｘ           ... キャンセル／低速移動
+　　左シフト     ... 高速移動
+　　スペース     ... ポーズ
+
+　　プレイ中どのタイミングでもエスケープキーを押すとゲームを終了します。
+　　ゲームパッドも使えます。
 
 
-����҂ւ̘A����
+　●アクション
 
-�@stackprobes@gmail.com
+　　フィールドマップ上でアクションキーを押すと、
+　　目の前にオブジェクトを置いたり、消したりすることができます。
 
-�@�o�O��v�]�Ȃǂ��A�����������B
+　　ポーズ画面の「アクション」からアクションキーの動作を変更できます。
+
+　　★進みたい方向が水域などで進めない場合は「整地」などを使ってオブジェクトを消してください。
+
+　　★森の木など消せないオブジェクトもあります。
+
+　　★スタート地点のマップは定期的にリセットするかもしれません。
+
+
+　●マップデータの同期
+
+　　だいたい１０～１５秒間隔でサーバー上のマップデータと同期を取ります。
+
+
+■素材提供
+
+　●画像
+
+　　きまぐれアフター
+　　http://www5d.biglobe.ne.jp/~gakai/
+
+　　臼井の会 ＲＰＧツクール素材支部
+　　http://usui.moo.jp/rpg_tukuru.html
+
+　　First Seed Material
+　　http://www.tekepon.net/fsm
+
+　　ぴぽや
+　　http://piposozai.blog76.fc2.com/
+
+　●ＢＧＭ
+
+　　フリー音楽素材 H/MIX GALLERY
+　　http://www.hmix.net/
+
+　●ＳＥ
+
+　　フリー音楽素材 Senses Circuit
+　　http://www.senses-circuit.com/
+
+
+■ライセンス表記・謝辞
+
+　●DxLib
+
+　　DX Library Copyright (C) 2001-2008 Takumi Yamada.
+　　libpng　Copyright (c) 1998-2004 Glenn Randers-Pehrson.
+　　zlib　Copyright (C) 1995-2004 Jean-loup Gailly and Mark Adler.
+
+　●MT19937
+
+　　A C-program for MT19937, with initialization improved 2002/1/26.
+　　Coded by Takuji Nishimura and Makoto Matsumoto.
+
+　●SHA-512
+
+　　This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)
+　　This product includes software written by Tim Hudson (tjh@cryptsoft.com)
+
+
+■取り扱い種別
+
+　フリーソフト
+
+
+■作者への連絡先
+
+　stackprobes@gmail.com
+
+　バグや要望などご連絡ください。
 
