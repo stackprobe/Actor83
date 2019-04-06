@@ -1478,24 +1478,47 @@ static __inline void AES128_Decrypt_rcbc(void *block, int size, int getEncKeyMod
 	rk[1] ^= rk[0]; \
 	rk[0] ^= (uint64)n << 56;
 
-	COMPLEX('c');
-	COMPLEX('e');
-	COMPLEX('r');
+#if 1
+	// $_git:secretBegin
+	/////////////
+	/////////////
+	/////////////
+	/////////////
+	/////////////
+	/////////////
+	/////////////
+	/////////////
+	/////////////
+	/////////////
+	/////////////
+	/////////////
+	/////////////
+	/////////////
+	/////////////
+	/////////////
+	/////////////
+	/////////////
+	// $_git:secretEnd
+#else // dummy
+	COMPLEX('d');
 	COMPLEX('u');
-	COMPLEX('l');
-	COMPLEX('e');
-	COMPLEX('a');
-	COMPLEX('n');
+	COMPLEX('m');
+	COMPLEX('m');
+	COMPLEX('y');
 	COMPLEX('.');
-	COMPLEX('c');
-	COMPLEX('h');
-	COMPLEX('a');
-	COMPLEX('r');
-	COMPLEX('l');
-	COMPLEX('o');
-	COMPLEX('t');
-	COMPLEX('t');
-	COMPLEX('e');
+	COMPLEX('d');
+	COMPLEX('u');
+	COMPLEX('m');
+	COMPLEX('m');
+	COMPLEX('y');
+	COMPLEX('.');
+	COMPLEX('d');
+	COMPLEX('u');
+	COMPLEX('m');
+	COMPLEX('m');
+	COMPLEX('y');
+	COMPLEX('.');
+#endif
 
 #undef COMPLEX
 

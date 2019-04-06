@@ -9,7 +9,11 @@
 
 autoBlock_t *CRPC_GetRawKey(void)
 {
-	return makeBlockHexLine("5d47556eb3051f23420ffc9069d3ea72");
+#if 1
+	////// ///////////////////////////////////////////////////// // $_git:secret
+#else // dummy
+	return makeBlockHexLine("ffffffffffffffffffffffffffffffff");
+#endif
 }
 void CRPC_Init(void)
 {
