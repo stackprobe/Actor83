@@ -13,7 +13,7 @@ http://stackprobe.dip.jp/Actor83
 開発環境
 --------
 
-Windows 7 Home Premium
+Windows 10 Pro
 Visual C++ 2010 Express Edition
 DxLib
 
