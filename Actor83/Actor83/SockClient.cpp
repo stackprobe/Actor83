@@ -23,7 +23,7 @@ static void ConfigInit(void)
 
 	if(!accessible(file))
 	{
-#if 0
+#if 1
 		file = "..\\..\\TestServer.conf";
 #else
 		file = "..\\..\\TestServer_Honban.conf";

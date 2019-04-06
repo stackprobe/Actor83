@@ -62,6 +62,15 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	// < DxLib
 
+#if LOG_ENABLED // 鍵の確認
+	{
+		char *b = na(char, 32);
+		int s = 32;
+		aes128_decrypt_extend(b, s, 1);
+		memFree(b);
+	}
+#endif
+
 	// ここで Reset と付く関数をすべて呼んでおくこと。
 
 	DPE_Reset();
