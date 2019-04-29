@@ -55,7 +55,7 @@ int IsExistEnemy(int fldX, int fldY);
 // ---- repulsion ----
 
 void ClearRepulsion(void);
-void Repulsion(double &me_x, double &me_y);
+void Repulsion(double &me_x, double &me_y, int *tell = NULL);
 
 // ---- crashed ----
 

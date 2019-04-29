@@ -143,15 +143,17 @@ int IsExistEnemy(int fldX, int fldY)
 void ClearRepulsion(void)
 {
 	FDc.RepulsionList->Clear();
+	FDc.RepulsionTellList->Clear();
 }
-void Repulsion(double &me_x, double &me_y)
+void Repulsion(double &me_x, double &me_y, int *tell)
 {
 	const double RANGE = 32.0;
 
-	for(int index = 0; index < FDc.RepulsionList->GetCount(); index += 2)
+	for(int index = 0; index * 2 < FDc.RepulsionList->GetCount(); index++)
 	{
-		double os_x = FDc.RepulsionList->GetElement(index);
-		double os_y = FDc.RepulsionList->GetElement(index + 1);
+		double os_x = FDc.RepulsionList->GetElement(index * 2 + 0);
+		double os_y = FDc.RepulsionList->GetElement(index * 2 + 1);
+		int *os_tell = FDc.RepulsionTellList->GetElement(index);
 
 		double dx = me_x - os_x;
 		double dy = me_y - os_y;
@@ -178,11 +180,14 @@ void Repulsion(double &me_x, double &me_y)
 				me_x = os_x + rme_x;
 				me_y = os_y + rme_y;
 			}
+			if(os_tell)
+				*os_tell = 1;
 		}
 	}
 
 	FDc.RepulsionList->AddElement(me_x);
 	FDc.RepulsionList->AddElement(me_y);
+	FDc.RepulsionTellList->AddElement(tell);
 }
 
 // ---- crashed ----
@@ -190,6 +195,22 @@ void Repulsion(double &me_x, double &me_y)
 void EnemyWeaponCrashed(Enemy_t *e)
 {
 	SEPlay(SE_ENEMY_DEATH);
+
+	AddCommonEffect(
+		Gnd.EL,
+		0,
+		D_WEAPON_00 + 1 | DTP,
+		e->X,
+		e->Y,
+		eRnd() * 0.3,
+		1.5,
+		0.9,
+		0.0,
+		-2.0,
+		eRnd() * 0.1,
+		0.0,
+		-0.1
+		);
 
 	int fldX = e->Origin.X;
 	int fldY = e->Origin.Y;

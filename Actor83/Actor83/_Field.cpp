@@ -723,6 +723,9 @@ void FieldMain(void)
 			if(fastOn)
 				SPEED *= 3.0;
 
+			if(FDc.Player.Pushing)
+				SPEED *= 0.5;
+
 			double NANAME_SPEED = SPEED / 1.414213562373;
 
 			switch(dir)
@@ -1047,11 +1050,15 @@ endTakaraOpen:;
 			}
 		}
 
+		int plRepulTell = 0;
+
 		ClearRepulsion();
-		Repulsion(FDc.Player.X, FDc.Player.Y);
+		Repulsion(FDc.Player.X, FDc.Player.Y, &plRepulTell);
 
 		EachFrameAllEnemy();
 		EachFrameAllWeapon();
+
+		FDc.Player.Pushing = plRepulTell;
 
 		// BeToTop èàóù
 		{

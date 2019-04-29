@@ -16,6 +16,7 @@ void FieldInit(void)
 	FDc.DrawEnemy = new taskList();
 	FDc.EnemyList = new autoList<Enemy_t *>();
 	FDc.RepulsionList = new autoList<double>();
+	FDc.RepulsionTellList = new autoList<int *>();
 	FDc.WeaponList = new autoList<Weapon_t *>();
 }
 void FieldFnlz(void)
@@ -27,6 +28,7 @@ void FieldFnlz(void)
 	delete FDc.DrawEnemy;
 	releaseList(FDc.EnemyList, ReleaseEnemy);
 	delete FDc.RepulsionList;
+	delete FDc.RepulsionTellList;
 	releaseList(FDc.WeaponList, ReleaseWeapon);
 
 	memset(&FDc, 0x00, sizeof(FDc));

@@ -41,6 +41,8 @@ typedef struct FDc_st
 			int EFId;
 		}
 		Action;
+
+		int Pushing;
 	}
 	Player;
 
@@ -63,6 +65,7 @@ typedef struct FDc_st
 	taskList *DrawEnemy;
 	autoList<Enemy_t *> *EnemyList;
 	autoList<double> *RepulsionList; // { x, y }...
+	autoList<int *> *RepulsionTellList;
 	autoList<Weapon_t *> *WeaponList;
 }
 FDc_t;
