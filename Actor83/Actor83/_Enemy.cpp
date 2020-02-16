@@ -2,7 +2,7 @@
 
 Enemy_t *CreateEnemy(void)
 {
-	Enemy_t *e = nb(Enemy_t);
+	Enemy_t *e = nb_(Enemy_t);
 
 	e->Frame = -1;
 

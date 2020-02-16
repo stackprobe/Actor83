@@ -13,9 +13,9 @@ FieldInfo_t;
 #define SEND_MAX 100
 #define RECV_MAX 10000
 
-static oneObject(FieldInfo_t, na(FieldInfo_t, SEND_MAX), GetSData)
+static oneObject(FieldInfo_t, na_(FieldInfo_t, SEND_MAX), GetSData)
 static int SCount;
-static oneObject(FieldInfo_t, na(FieldInfo_t, RECV_MAX), GetRData)
+static oneObject(FieldInfo_t, na_(FieldInfo_t, RECV_MAX), GetRData)
 static int RCount;
 
 static int OverflowLocked;

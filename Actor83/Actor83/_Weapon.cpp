@@ -2,7 +2,7 @@
 
 Weapon_t *CreateWeapon(double x, double y, int dir)
 {
-	Weapon_t *i = nb(Weapon_t);
+	Weapon_t *i = nb_(Weapon_t);
 
 	i->Frame = -1;
 	i->X = x;

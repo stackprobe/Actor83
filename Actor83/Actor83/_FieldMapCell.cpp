@@ -4,7 +4,7 @@
 
 FMCell_t *CreateFMCell(void)
 {
-	FMCell_t *i = nb(FMCell_t);
+	FMCell_t *i = nb_(FMCell_t);
 
 	i->SFId.Ground = SF_GREEN;
 

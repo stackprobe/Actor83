@@ -4,7 +4,7 @@
 
 E_Monster_t *E_Monster_Create(int color, int kind, int animeAlways)
 {
-	E_Monster_t *ed = nb(E_Monster_t);
+	E_Monster_t *ed = nb_(E_Monster_t);
 
 	ed->Color = color;
 	ed->Kind = kind;
