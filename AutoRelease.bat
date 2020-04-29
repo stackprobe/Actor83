@@ -1,14 +1,13 @@
-IF NOT EXIST AutoRelease.bat GOTO END
 CLS
-rem リリースして qrum します。★要バージョン入力
+rem リリースして qrum します。
+	rem ★要バージョン入力
 PAUSE
 
-rem CALL ff
-rem cx **
+CALL newcsrr
 
-rem CD /D %~dp0.
-
-rem IF NOT EXIST AutoRelease.bat GOTO END
+CALL ff
+cx **
+CD /D %~dp0.
 
 CALL qq
 cx **
@@ -22,5 +21,3 @@ START "" /B /WAIT /DC:\home\bat syncRev
 CALL qrumauto rel
 
 rem **** AUTO RELEASE COMPLETED ****
-
-:END
