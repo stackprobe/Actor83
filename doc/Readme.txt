@@ -1,7 +1,7 @@
 ===============================================================================
 
 　Actor83
-　　　　　　　　　　　　　　　　　　　　　　　　　　(C) 201x cerulean.charlotte
+　　　　　　　　　　　　　　　　　　　　　　　　　　(C) 2013 cerulean.charlotte
 
 ===============================================================================
 
@@ -111,14 +111,10 @@
 　　http://www.senses-circuit.com/
 
 
-■取り扱い種別
+■このゲームの製作者
 
-　フリーソフト
+　cerulean.charlotte
+　http://cerulean.fam.cx/
 
-
-■作者への連絡先
-
-　cerulean.charlottes@gmail.com
-
-　不具合や要望など気軽にご連絡下さい。
+　連絡先 -> cerulean.charlottes@gmail.com
 
