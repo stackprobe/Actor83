@@ -136,7 +136,7 @@
 
 ■作者への連絡先
 
-　stackprobes@gmail.com
+　cerulean.charlottes@gmail.com
 
-　バグや要望などご連絡ください。
+　不具合や要望など気軽にご連絡下さい。
 
