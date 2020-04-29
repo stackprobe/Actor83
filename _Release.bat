@@ -10,12 +10,14 @@ C:\Factory\SubTools\makeAESCluster.exe Music.txt       out\Data2.dat %RAWKEY% 20
 C:\Factory\SubTools\makeAESCluster.exe SoundEffect.txt out\Data3.dat %RAWKEY% 300000000
 
 COPY /B Actor83\Release\Actor83.exe out
+COPY /B AUTHORS out
 C:\Factory\Tools\xcp.exe doc out
+ren out\Manual.txt ƒ}ƒjƒ…ƒAƒ‹.txt
 
 out\Actor83.exe /L
 IF ERRORLEVEL 1 START ?_LOG_ENABLED
 
-C:\Factory\SubTools\zip.exe /RVE- /G out Actor83
+C:\Factory\SubTools\zip.exe /G out Actor83
 C:\Factory\Tools\summd5.exe /M out
 
 IF NOT "%1" == "/-P" PAUSE

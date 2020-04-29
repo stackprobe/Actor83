@@ -1,6 +1,7 @@
 ===============================================================================
 
 　Actor83
+　　　　　　　　　　　　　　　　　　　　　　　　　　(C) 201x cerulean.charlotte
 
 ===============================================================================
 
@@ -108,25 +109,6 @@
 
 　　フリー音楽素材 Senses Circuit
 　　http://www.senses-circuit.com/
-
-
-■ライセンス表記
-
-　●DxLib
-
-　　DX Library Copyright (C) 2001-2008 Takumi Yamada.
-　　libpng　Copyright (c) 1998-2004 Glenn Randers-Pehrson.
-　　zlib　Copyright (C) 1995-2004 Jean-loup Gailly and Mark Adler.
-
-　●MT19937
-
-　　A C-program for MT19937, with initialization improved 2002/1/26.
-　　Coded by Takuji Nishimura and Makoto Matsumoto.
-
-　●SHA-512
-
-　　This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)
-　　This product includes software written by Tim Hudson (tjh@cryptsoft.com)
 
 
 ■取り扱い種別
