@@ -15,6 +15,7 @@ C:\Factory\Tools\xcp.exe doc out
 out\Actor83.exe /L
 IF ERRORLEVEL 1 START ?_LOG_ENABLED
 
-C:\Factory\SubTools\zip.exe /O out Actor83
+C:\Factory\SubTools\zip.exe /RVE- /G out Actor83
+C:\Factory\Tools\summd5.exe /M out
 
-PAUSE
+IF NOT "%1" == "/-P" PAUSE
