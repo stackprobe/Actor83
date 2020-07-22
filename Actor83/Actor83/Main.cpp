@@ -50,7 +50,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 //	SetFullSceneAntiAliasingMode(4, 2); // 適当な値が分からん。フルスクリーン廃止したので不要
 
-	SetWindowIconID(333); // ウィンドウ左上のアイコン
+//	SetWindowIconID(333); // ウィンドウ左上のアイコン // del @ 2020.7.21
 
 	errorCase(DxLib_Init()); // ? 失敗
 
