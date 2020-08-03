@@ -779,7 +779,7 @@ static void SM_AddSEVolume(int volume)
 }
 static void SM_PadButtonSetting(void)
 {
-	error(); // todo
+	error(); // HACK
 }
 static void SM_MenuScreenSize(void)
 {
