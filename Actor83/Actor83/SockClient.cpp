@@ -48,7 +48,7 @@ static void ConfigInit(void)
 static char *GetServerHost(void) // ret: bind
 {
 	ConfigInit();
-	return Config.ServerHost;//"stackprobe.dip.jp";
+	return Config.ServerHost;//"stackprobe.ccsp.mydns.jp";
 }
 static int GetServerPort(void)
 {
@@ -111,7 +111,7 @@ static int DoRecvData(int sock, void *data, int dataSize)
 
 	return retval;
 }
-static int DoTransmit(int sock, void *data, int dataSize, int millis, int forWrite) // ret: ‘—M‚µ‚½ƒoƒCƒg”, -1 == ƒGƒ‰[
+static int DoTransmit(int sock, void *data, int dataSize, int millis, int forWrite) // ret: é€ä¿¡ã—ãŸãƒã‚¤ãƒˆæ•°, -1 == ã‚¨ãƒ©ãƒ¼
 {
 	if(dataSize == 0)
 		return 0;
@@ -123,7 +123,7 @@ static int DoTransmit(int sock, void *data, int dataSize, int millis, int forWri
 
 	retval = (forWrite ? DoSendData : DoRecvData)(sock, data, dataSize);
 
-	if(retval == 0) // ? ‘ÎŠİ‚©‚çØ’f‚³‚ê‚½B
+	if(retval == 0) // ? å¯¾å²¸ã‹ã‚‰åˆ‡æ–­ã•ã‚ŒãŸã€‚
 		retval = -1;
 
 	return retval;
@@ -136,7 +136,7 @@ static int DoRecv(int sock, void *data, int dataSize, int millis)
 {
 	return DoTransmit(sock, data, dataSize, millis, 0);
 }
-static int DoTransmitAll(int sock, void *data, int dataSize, int forWrite) // ? ¬Œ÷
+static int DoTransmitAll(int sock, void *data, int dataSize, int forWrite) // ? æˆåŠŸ
 {
 	int index = 0;
 
@@ -211,7 +211,7 @@ static void PutHash(autoList<uchar> *data)
 	MakeHash(data, hash);
 	data->AddElements(hash, 16);
 }
-static int UnputHash(autoList<uchar> *data) // ret: ? ³í‚Èƒf[ƒ^
+static int UnputHash(autoList<uchar> *data) // ret: ? æ­£å¸¸ãªãƒ‡ãƒ¼ã‚¿
 {
 	if(data->GetCount() < 16)
 		return 0;
@@ -230,7 +230,7 @@ static int UnputHash(autoList<uchar> *data) // ret: ? ³í‚Èƒf[ƒ^
 
 #define SEND_RECV_ERROR { LOGPOS(); goto endFunc; }
 
-static autoList<uchar> *SendRecv(int sock, autoList<uchar> *sendData) // ret: NULL == ¸”s
+static autoList<uchar> *SendRecv(int sock, autoList<uchar> *sendData) // ret: NULL == å¤±æ•—
 {
 	autoList<uchar> *recvData = NULL;
 	uchar clSeed[16];
@@ -298,7 +298,7 @@ static autoList<uchar> *SendRecv(int sock, autoList<uchar> *sendData) // ret: NU
 #endif
 
 	/*
-		‚à‚¤•s—v‚È‚Ì‚ÅA‘‚ß‚É”j‰ó
+		ã‚‚ã†ä¸è¦ãªã®ã§ã€æ—©ã‚ã«ç ´å£Š
 	*/
 	memset(&clSeed, 0x00, 16);
 	memset(&svSeed, 0x00, 16);
@@ -386,7 +386,7 @@ static void Thread(void)
 	ServerHost = GetServerHost();
 	ServerPort = GetServerPort();
 
-	// ƒ\ƒPƒbƒg‰Šú‰»
+	// ã‚½ã‚±ãƒƒãƒˆåˆæœŸåŒ–
 	{
 		WORD ver = MAKEWORD(2, 2);
 		WSADATA wsd;
@@ -395,7 +395,7 @@ static void Thread(void)
 
 	while(KeepThread)
 	{
-		if(!SData) // ? ‘—Mƒf[ƒ^–³‚µ -> ŸƒtƒŒ[ƒ€‚Ü‚Å‘Ò‚Â
+		if(!SData) // ? é€ä¿¡ãƒ‡ãƒ¼ã‚¿ç„¡ã— -> æ¬¡ãƒ•ãƒ¬ãƒ¼ãƒ ã¾ã§å¾…ã¤
 		{
 			InfoMessage = "STANDBY";
 //			ErrorMessage = "";
@@ -403,7 +403,7 @@ static void Thread(void)
 			doThreads(15);
 			continue;
 		}
-		if(FrameStartTime < NextConnectTime) // ’ÊMŠÔŠu’²®
+		if(FrameStartTime < NextConnectTime) // é€šä¿¡é–“éš”èª¿æ•´
 		{
 			InfoMessage = "TIME_WAIT";
 //			ErrorMessage = "";
@@ -491,9 +491,9 @@ connectError:
 		}
 
 		/*
-			’ÊMƒGƒ‰[‚Ì‚Æ‚«A
-			‚±‚±‚Ü‚Å‚ÍƒŠƒgƒ‰ƒC‚·‚éB
-			‚±‚±‚©‚ç‚Í¸”s‚·‚éB
+			é€šä¿¡ã‚¨ãƒ©ãƒ¼ã®ã¨ãã€
+			ã“ã“ã¾ã§ã¯ãƒªãƒˆãƒ©ã‚¤ã™ã‚‹ã€‚
+			ã“ã“ã‹ã‚‰ã¯å¤±æ•—ã™ã‚‹ã€‚
 		*/
 
 		autoList<uchar> *recvData = SendRecv(sock, SData);
@@ -508,7 +508,7 @@ connectError:
 			critical();
 		}
 
-		if(!recvData) // ? ¸”s
+		if(!recvData) // ? å¤±æ•—
 		{
 			InfoMessage = "TRANSMIT_ERROR_WAIT";
 			ErrorMessage = "TRANSMIT_ERROR";
@@ -522,7 +522,7 @@ connectError:
 		Comm_Successful();
 	}
 
-	// ƒ\ƒPƒbƒgŠJ•ú
+	// ã‚½ã‚±ãƒƒãƒˆé–‹æ”¾
 	{
 		WSACleanup();
 	}
@@ -553,11 +553,11 @@ void SockSend(autoList<uchar> *sendData) // sendData: bind
 	}
 	SData = sendData;
 }
-int IsSockSending(void) // ? ‘—óM’† || (‘—óMŠ®—¹ && óMƒf[ƒ^–¢æ“¾)
+int IsSockSending(void) // ? é€å—ä¿¡ä¸­ || (é€å—ä¿¡å®Œäº† && å—ä¿¡ãƒ‡ãƒ¼ã‚¿æœªå–å¾—)
 {
 	return SData || RData;
 }
-autoList<uchar> *SockRecv(void) // ret: NULL == (–¢‘—óM || ‘—óM¸”s)
+autoList<uchar> *SockRecv(void) // ret: NULL == (æœªé€å—ä¿¡ || é€å—ä¿¡å¤±æ•—)
 {
 	if(!RData)
 		return NULL;
