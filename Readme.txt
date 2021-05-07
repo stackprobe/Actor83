@@ -10,7 +10,7 @@ Windows用フリーゲーム(？) Actor83 の開発環境です。
 以下の場所からダウンロードできます。
 
 うちのサイト
-http://cerulean.fam.cx
+http://cerulean.ccsp.mydns.jp
 -> Actor83
 
 
