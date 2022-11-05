@@ -7,11 +7,7 @@ Windows用フリーゲーム(？) Actor83 の開発環境です。
 ビルド済み配布物
 ----------------
 
-以下の場所からダウンロードできます。
-
-うちのサイト
-http://cerulean.ccsp.mydns.jp
--> Actor83
+https://www.freem.ne.jp/win/game/23431
 
 
 開発環境
